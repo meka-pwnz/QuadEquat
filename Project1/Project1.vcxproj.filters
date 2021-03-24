@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="QuadEquat.cpp">
+    <ClCompile Include="MyForm.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="QuadEquadSource.cpp">
@@ -23,6 +23,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MyForm.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
     <ClInclude Include="QuadEquatHeader.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
