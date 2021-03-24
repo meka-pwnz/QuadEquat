@@ -70,13 +70,15 @@ namespace Project1 {
 	private: System::Windows::Forms::RadioButton^ poldel_radio;
 	private: System::Windows::Forms::RadioButton^ hord_radio;
 
+	private: System::ComponentModel::IContainer^ components;
+
 
 
 	private:
 		/// <summary>
 		/// Обязательная переменная конструктора.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -86,6 +88,14 @@ namespace Project1 {
 		void InitializeComponent(void)
 		{
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->label10 = (gcnew System::Windows::Forms::Label());
+			this->label9 = (gcnew System::Windows::Forms::Label());
+			this->b_area = (gcnew System::Windows::Forms::TextBox());
+			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->a_area = (gcnew System::Windows::Forms::TextBox());
+			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->eps_area = (gcnew System::Windows::Forms::TextBox());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
@@ -95,20 +105,12 @@ namespace Project1 {
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->i_index = (gcnew System::Windows::Forms::TextBox());
 			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
-			this->eps_area = (gcnew System::Windows::Forms::TextBox());
-			this->label6 = (gcnew System::Windows::Forms::Label());
-			this->label7 = (gcnew System::Windows::Forms::Label());
-			this->a_area = (gcnew System::Windows::Forms::TextBox());
-			this->label8 = (gcnew System::Windows::Forms::Label());
-			this->b_area = (gcnew System::Windows::Forms::TextBox());
-			this->label9 = (gcnew System::Windows::Forms::Label());
-			this->label10 = (gcnew System::Windows::Forms::Label());
-			this->hord_radio = (gcnew System::Windows::Forms::RadioButton());
-			this->poldel_radio = (gcnew System::Windows::Forms::RadioButton());
-			this->label11 = (gcnew System::Windows::Forms::Label());
-			this->enter_button = (gcnew System::Windows::Forms::Button());
-			this->drop_button = (gcnew System::Windows::Forms::Button());
 			this->result_area = (gcnew System::Windows::Forms::TextBox());
+			this->drop_button = (gcnew System::Windows::Forms::Button());
+			this->enter_button = (gcnew System::Windows::Forms::Button());
+			this->label11 = (gcnew System::Windows::Forms::Label());
+			this->poldel_radio = (gcnew System::Windows::Forms::RadioButton());
+			this->hord_radio = (gcnew System::Windows::Forms::RadioButton());
 			this->groupBox1->SuspendLayout();
 			this->groupBox2->SuspendLayout();
 			this->SuspendLayout();
@@ -140,6 +142,77 @@ namespace Project1 {
 			this->groupBox1->TabIndex = 0;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Исходные данные:";
+			// 
+			// label10
+			// 
+			this->label10->AutoSize = true;
+			this->label10->Location = System::Drawing::Point(193, 164);
+			this->label10->Name = L"label10";
+			this->label10->Size = System::Drawing::Size(13, 20);
+			this->label10->TabIndex = 15;
+			this->label10->Text = L"]";
+			// 
+			// label9
+			// 
+			this->label9->AutoSize = true;
+			this->label9->Location = System::Drawing::Point(118, 164);
+			this->label9->Name = L"label9";
+			this->label9->Size = System::Drawing::Size(13, 20);
+			this->label9->TabIndex = 14;
+			this->label9->Text = L";";
+			// 
+			// b_area
+			// 
+			this->b_area->Location = System::Drawing::Point(137, 161);
+			this->b_area->Name = L"b_area";
+			this->b_area->Size = System::Drawing::Size(50, 26);
+			this->b_area->TabIndex = 13;
+			this->b_area->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
+			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->Location = System::Drawing::Point(8, 164);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(48, 20);
+			this->label8->TabIndex = 12;
+			this->label8->Text = L"Δx = [";
+			// 
+			// a_area
+			// 
+			this->a_area->Location = System::Drawing::Point(62, 161);
+			this->a_area->Name = L"a_area";
+			this->a_area->Size = System::Drawing::Size(50, 26);
+			this->a_area->TabIndex = 11;
+			this->a_area->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
+			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label7->Location = System::Drawing::Point(9, 142);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(155, 16);
+			this->label7->TabIndex = 10;
+			this->label7->Text = L"Исследуемая область:";
+			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->Location = System::Drawing::Point(8, 107);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(30, 20);
+			this->label6->TabIndex = 9;
+			this->label6->Text = L"ɛ =";
+			// 
+			// eps_area
+			// 
+			this->eps_area->Location = System::Drawing::Point(44, 104);
+			this->eps_area->Name = L"eps_area";
+			this->eps_area->Size = System::Drawing::Size(89, 26);
+			this->eps_area->TabIndex = 8;
+			this->eps_area->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
 			// label5
 			// 
@@ -232,109 +305,26 @@ namespace Project1 {
 			this->groupBox2->TabStop = false;
 			this->groupBox2->Text = L"Решение:";
 			// 
-			// eps_area
+			// result_area
 			// 
-			this->eps_area->Location = System::Drawing::Point(44, 104);
-			this->eps_area->Name = L"eps_area";
-			this->eps_area->Size = System::Drawing::Size(89, 26);
-			this->eps_area->TabIndex = 8;
-			this->eps_area->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
+			this->result_area->BackColor = System::Drawing::SystemColors::ButtonHighlight;
+			this->result_area->Location = System::Drawing::Point(104, 117);
+			this->result_area->Name = L"result_area";
+			this->result_area->ReadOnly = true;
+			this->result_area->Size = System::Drawing::Size(135, 26);
+			this->result_area->TabIndex = 16;
+			this->result_area->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
-			// label6
+			// drop_button
 			// 
-			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(8, 107);
-			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(30, 20);
-			this->label6->TabIndex = 9;
-			this->label6->Text = L"ɛ =";
-			// 
-			// label7
-			// 
-			this->label7->AutoSize = true;
-			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label7->Location = System::Drawing::Point(9, 142);
-			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(155, 16);
-			this->label7->TabIndex = 10;
-			this->label7->Text = L"Исследуемая область:";
-			// 
-			// a_area
-			// 
-			this->a_area->Location = System::Drawing::Point(62, 161);
-			this->a_area->Name = L"a_area";
-			this->a_area->Size = System::Drawing::Size(50, 26);
-			this->a_area->TabIndex = 11;
-			this->a_area->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
-			// 
-			// label8
-			// 
-			this->label8->AutoSize = true;
-			this->label8->Location = System::Drawing::Point(8, 164);
-			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(48, 20);
-			this->label8->TabIndex = 12;
-			this->label8->Text = L"Δx = [";
-			// 
-			// b_area
-			// 
-			this->b_area->Location = System::Drawing::Point(137, 161);
-			this->b_area->Name = L"b_area";
-			this->b_area->Size = System::Drawing::Size(50, 26);
-			this->b_area->TabIndex = 13;
-			this->b_area->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
-			// 
-			// label9
-			// 
-			this->label9->AutoSize = true;
-			this->label9->Location = System::Drawing::Point(118, 164);
-			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(13, 20);
-			this->label9->TabIndex = 14;
-			this->label9->Text = L";";
-			// 
-			// label10
-			// 
-			this->label10->AutoSize = true;
-			this->label10->Location = System::Drawing::Point(193, 164);
-			this->label10->Name = L"label10";
-			this->label10->Size = System::Drawing::Size(13, 20);
-			this->label10->TabIndex = 15;
-			this->label10->Text = L"]";
-			// 
-			// hord_radio
-			// 
-			this->hord_radio->AutoSize = true;
-			this->hord_radio->Location = System::Drawing::Point(11, 50);
-			this->hord_radio->Name = L"hord_radio";
-			this->hord_radio->Size = System::Drawing::Size(116, 24);
-			this->hord_radio->TabIndex = 0;
-			this->hord_radio->TabStop = true;
-			this->hord_radio->Text = L"метод хорд";
-			this->hord_radio->UseVisualStyleBackColor = true;
-			// 
-			// poldel_radio
-			// 
-			this->poldel_radio->AutoSize = true;
-			this->poldel_radio->Location = System::Drawing::Point(11, 77);
-			this->poldel_radio->Name = L"poldel_radio";
-			this->poldel_radio->Size = System::Drawing::Size(248, 24);
-			this->poldel_radio->TabIndex = 1;
-			this->poldel_radio->TabStop = true;
-			this->poldel_radio->Text = L"метод половинного деления";
-			this->poldel_radio->UseVisualStyleBackColor = true;
-			// 
-			// label11
-			// 
-			this->label11->AutoSize = true;
-			this->label11->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label11->Location = System::Drawing::Point(8, 28);
-			this->label11->Name = L"label11";
-			this->label11->Size = System::Drawing::Size(112, 16);
-			this->label11->TabIndex = 16;
-			this->label11->Text = L"Метод решения:";
+			this->drop_button->Location = System::Drawing::Point(185, 161);
+			this->drop_button->Margin = System::Windows::Forms::Padding(3, 3, 25, 3);
+			this->drop_button->Name = L"drop_button";
+			this->drop_button->Size = System::Drawing::Size(135, 42);
+			this->drop_button->TabIndex = 17;
+			this->drop_button->Text = L"Сброс";
+			this->drop_button->UseVisualStyleBackColor = true;
+			this->drop_button->Click += gcnew System::EventHandler(this, &MyForm::drop_button_Click);
 			// 
 			// enter_button
 			// 
@@ -347,24 +337,38 @@ namespace Project1 {
 			this->enter_button->UseVisualStyleBackColor = true;
 			this->enter_button->Click += gcnew System::EventHandler(this, &MyForm::enter_button_Click);
 			// 
-			// drop_button
+			// label11
 			// 
-			this->drop_button->Location = System::Drawing::Point(185, 161);
-			this->drop_button->Margin = System::Windows::Forms::Padding(3, 3, 25, 3);
-			this->drop_button->Name = L"drop_button";
-			this->drop_button->Size = System::Drawing::Size(135, 42);
-			this->drop_button->TabIndex = 17;
-			this->drop_button->Text = L"Сброс";
-			this->drop_button->UseVisualStyleBackColor = true;
+			this->label11->AutoSize = true;
+			this->label11->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label11->Location = System::Drawing::Point(8, 28);
+			this->label11->Name = L"label11";
+			this->label11->Size = System::Drawing::Size(112, 16);
+			this->label11->TabIndex = 16;
+			this->label11->Text = L"Метод решения:";
 			// 
-			// result_area
+			// poldel_radio
 			// 
-			this->result_area->Location = System::Drawing::Point(104, 117);
-			this->result_area->Name = L"result_area";
-			this->result_area->ReadOnly = true;
-			this->result_area->Size = System::Drawing::Size(135, 26);
-			this->result_area->TabIndex = 16;
-			this->result_area->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
+			this->poldel_radio->AutoSize = true;
+			this->poldel_radio->Location = System::Drawing::Point(11, 77);
+			this->poldel_radio->Name = L"poldel_radio";
+			this->poldel_radio->Size = System::Drawing::Size(248, 24);
+			this->poldel_radio->TabIndex = 1;
+			this->poldel_radio->TabStop = true;
+			this->poldel_radio->Text = L"метод половинного деления";
+			this->poldel_radio->UseVisualStyleBackColor = true;
+			// 
+			// hord_radio
+			// 
+			this->hord_radio->AutoSize = true;
+			this->hord_radio->Location = System::Drawing::Point(11, 50);
+			this->hord_radio->Name = L"hord_radio";
+			this->hord_radio->Size = System::Drawing::Size(116, 24);
+			this->hord_radio->TabIndex = 0;
+			this->hord_radio->TabStop = true;
+			this->hord_radio->Text = L"метод хорд";
+			this->hord_radio->UseVisualStyleBackColor = true;
 			// 
 			// MyForm
 			// 
@@ -388,5 +392,6 @@ namespace Project1 {
 		}
 #pragma endregion
 		private: System::Void enter_button_Click(System::Object^ sender, System::EventArgs^ e);
-	};
+		private: System::Void drop_button_Click(System::Object^ sender, System::EventArgs^ e);
+};
 }
