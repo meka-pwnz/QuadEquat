@@ -5,7 +5,7 @@ using namespace System;
 using namespace System::Windows::Forms;
 
 [STAThreadAttribute]
-void main(array<String^>^ args) {
+void main(array<String^>^ argv) {
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
 
@@ -31,6 +31,15 @@ System::Void Project1::MyForm::enter_button_Click(System::Object^ sender, System
 
 System::Void Project1::MyForm::drop_button_Click(System::Object^ sender, System::EventArgs^ e)
 {
+	i_index->Clear();
+	j_index->Clear();
+	k_index->Clear();
+	eps_area->Clear();
+	a_area->Clear();
+	b_area->Clear();
+	result_area->Clear();
+	hord_radio->Checked = false;
+	poldel_radio->Checked = false;
 
 	return System::Void();
 }

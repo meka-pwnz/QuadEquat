@@ -37,28 +37,28 @@ namespace Project1 {
 	private: System::Windows::Forms::GroupBox^ groupBox1;
 	protected:
 	private: System::Windows::Forms::Label^ label1;
-	private: System::Windows::Forms::TextBox^ i_index;
+
 
 
 	private: System::Windows::Forms::GroupBox^ groupBox2;
 	private: System::Windows::Forms::Label^ label5;
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::Label^ label3;
-	private: System::Windows::Forms::TextBox^ k_index;
+
 
 	private: System::Windows::Forms::Label^ label2;
-	private: System::Windows::Forms::TextBox^ j_index;
+
 
 	private: System::Windows::Forms::Label^ label10;
 	private: System::Windows::Forms::Label^ label9;
-	private: System::Windows::Forms::TextBox^ b_area;
+
 
 	private: System::Windows::Forms::Label^ label8;
-	private: System::Windows::Forms::TextBox^ a_area;
+
 
 	private: System::Windows::Forms::Label^ label7;
 	private: System::Windows::Forms::Label^ label6;
-	private: System::Windows::Forms::TextBox^ eps_area;
+
 
 	private: System::Windows::Forms::TextBox^ result_area;
 	private: System::Windows::Forms::Button^ drop_button;
@@ -69,6 +69,12 @@ namespace Project1 {
 	private: System::Windows::Forms::Label^ label11;
 	private: System::Windows::Forms::RadioButton^ poldel_radio;
 	private: System::Windows::Forms::RadioButton^ hord_radio;
+	private: System::Windows::Forms::MaskedTextBox^ b_area;
+	private: System::Windows::Forms::MaskedTextBox^ a_area;
+	private: System::Windows::Forms::MaskedTextBox^ eps_area;
+	private: System::Windows::Forms::MaskedTextBox^ k_index;
+	private: System::Windows::Forms::MaskedTextBox^ j_index;
+	private: System::Windows::Forms::MaskedTextBox^ i_index;
 
 	private: System::ComponentModel::IContainer^ components;
 
@@ -90,20 +96,14 @@ namespace Project1 {
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->label10 = (gcnew System::Windows::Forms::Label());
 			this->label9 = (gcnew System::Windows::Forms::Label());
-			this->b_area = (gcnew System::Windows::Forms::TextBox());
 			this->label8 = (gcnew System::Windows::Forms::Label());
-			this->a_area = (gcnew System::Windows::Forms::TextBox());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->label6 = (gcnew System::Windows::Forms::Label());
-			this->eps_area = (gcnew System::Windows::Forms::TextBox());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->k_index = (gcnew System::Windows::Forms::TextBox());
 			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->j_index = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->i_index = (gcnew System::Windows::Forms::TextBox());
 			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
 			this->result_area = (gcnew System::Windows::Forms::TextBox());
 			this->drop_button = (gcnew System::Windows::Forms::Button());
@@ -111,28 +111,34 @@ namespace Project1 {
 			this->label11 = (gcnew System::Windows::Forms::Label());
 			this->poldel_radio = (gcnew System::Windows::Forms::RadioButton());
 			this->hord_radio = (gcnew System::Windows::Forms::RadioButton());
+			this->i_index = (gcnew System::Windows::Forms::MaskedTextBox());
+			this->j_index = (gcnew System::Windows::Forms::MaskedTextBox());
+			this->k_index = (gcnew System::Windows::Forms::MaskedTextBox());
+			this->eps_area = (gcnew System::Windows::Forms::MaskedTextBox());
+			this->a_area = (gcnew System::Windows::Forms::MaskedTextBox());
+			this->b_area = (gcnew System::Windows::Forms::MaskedTextBox());
 			this->groupBox1->SuspendLayout();
 			this->groupBox2->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// groupBox1
 			// 
+			this->groupBox1->Controls->Add(this->b_area);
+			this->groupBox1->Controls->Add(this->a_area);
+			this->groupBox1->Controls->Add(this->eps_area);
+			this->groupBox1->Controls->Add(this->k_index);
+			this->groupBox1->Controls->Add(this->j_index);
+			this->groupBox1->Controls->Add(this->i_index);
 			this->groupBox1->Controls->Add(this->label10);
 			this->groupBox1->Controls->Add(this->label9);
-			this->groupBox1->Controls->Add(this->b_area);
 			this->groupBox1->Controls->Add(this->label8);
-			this->groupBox1->Controls->Add(this->a_area);
 			this->groupBox1->Controls->Add(this->label7);
 			this->groupBox1->Controls->Add(this->label6);
-			this->groupBox1->Controls->Add(this->eps_area);
 			this->groupBox1->Controls->Add(this->label5);
 			this->groupBox1->Controls->Add(this->label4);
 			this->groupBox1->Controls->Add(this->label3);
-			this->groupBox1->Controls->Add(this->k_index);
 			this->groupBox1->Controls->Add(this->label2);
-			this->groupBox1->Controls->Add(this->j_index);
 			this->groupBox1->Controls->Add(this->label1);
-			this->groupBox1->Controls->Add(this->i_index);
 			this->groupBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->groupBox1->Location = System::Drawing::Point(28, 13);
@@ -161,14 +167,6 @@ namespace Project1 {
 			this->label9->TabIndex = 14;
 			this->label9->Text = L";";
 			// 
-			// b_area
-			// 
-			this->b_area->Location = System::Drawing::Point(137, 161);
-			this->b_area->Name = L"b_area";
-			this->b_area->Size = System::Drawing::Size(50, 26);
-			this->b_area->TabIndex = 13;
-			this->b_area->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
-			// 
 			// label8
 			// 
 			this->label8->AutoSize = true;
@@ -177,14 +175,6 @@ namespace Project1 {
 			this->label8->Size = System::Drawing::Size(48, 20);
 			this->label8->TabIndex = 12;
 			this->label8->Text = L"Δx = [";
-			// 
-			// a_area
-			// 
-			this->a_area->Location = System::Drawing::Point(62, 161);
-			this->a_area->Name = L"a_area";
-			this->a_area->Size = System::Drawing::Size(50, 26);
-			this->a_area->TabIndex = 11;
-			this->a_area->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
 			// label7
 			// 
@@ -205,14 +195,6 @@ namespace Project1 {
 			this->label6->Size = System::Drawing::Size(30, 20);
 			this->label6->TabIndex = 9;
 			this->label6->Text = L"ɛ =";
-			// 
-			// eps_area
-			// 
-			this->eps_area->Location = System::Drawing::Point(44, 104);
-			this->eps_area->Name = L"eps_area";
-			this->eps_area->Size = System::Drawing::Size(89, 26);
-			this->eps_area->TabIndex = 8;
-			this->eps_area->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
 			// label5
 			// 
@@ -245,14 +227,6 @@ namespace Project1 {
 			this->label3->TabIndex = 5;
 			this->label3->Text = L"= 0";
 			// 
-			// k_index
-			// 
-			this->k_index->Location = System::Drawing::Point(195, 47);
-			this->k_index->Name = L"k_index";
-			this->k_index->Size = System::Drawing::Size(50, 26);
-			this->k_index->TabIndex = 4;
-			this->k_index->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
-			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
@@ -262,14 +236,6 @@ namespace Project1 {
 			this->label2->TabIndex = 3;
 			this->label2->Text = L"x +";
 			// 
-			// j_index
-			// 
-			this->j_index->Location = System::Drawing::Point(104, 47);
-			this->j_index->Name = L"j_index";
-			this->j_index->Size = System::Drawing::Size(50, 26);
-			this->j_index->TabIndex = 2;
-			this->j_index->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
-			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
@@ -278,14 +244,6 @@ namespace Project1 {
 			this->label1->Size = System::Drawing::Size(34, 20);
 			this->label1->TabIndex = 1;
 			this->label1->Text = L"x² +";
-			// 
-			// i_index
-			// 
-			this->i_index->Location = System::Drawing::Point(8, 47);
-			this->i_index->Name = L"i_index";
-			this->i_index->Size = System::Drawing::Size(50, 26);
-			this->i_index->TabIndex = 0;
-			this->i_index->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
 			// groupBox2
 			// 
@@ -369,6 +327,68 @@ namespace Project1 {
 			this->hord_radio->TabStop = true;
 			this->hord_radio->Text = L"метод хорд";
 			this->hord_radio->UseVisualStyleBackColor = true;
+			// 
+			// i_index
+			// 
+			this->i_index->InsertKeyMode = System::Windows::Forms::InsertKeyMode::Insert;
+			this->i_index->Location = System::Drawing::Point(12, 47);
+			this->i_index->Mask = L"#0000";
+			this->i_index->Name = L"i_index";
+			this->i_index->PromptChar = ' ';
+			this->i_index->Size = System::Drawing::Size(48, 26);
+			this->i_index->TabIndex = 16;
+			this->i_index->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
+			this->i_index->ValidatingType = System::Int32::typeid;
+			// 
+			// j_index
+			// 
+			this->j_index->Location = System::Drawing::Point(104, 47);
+			this->j_index->Mask = L"#0000";
+			this->j_index->Name = L"j_index";
+			this->j_index->PromptChar = ' ';
+			this->j_index->Size = System::Drawing::Size(48, 26);
+			this->j_index->TabIndex = 17;
+			this->j_index->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
+			// 
+			// k_index
+			// 
+			this->k_index->Location = System::Drawing::Point(195, 47);
+			this->k_index->Mask = L"#0000";
+			this->k_index->Name = L"k_index";
+			this->k_index->PromptChar = ' ';
+			this->k_index->Size = System::Drawing::Size(48, 26);
+			this->k_index->TabIndex = 18;
+			this->k_index->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
+			// 
+			// eps_area
+			// 
+			this->eps_area->Location = System::Drawing::Point(44, 104);
+			this->eps_area->Mask = L"0.000000";
+			this->eps_area->Name = L"eps_area";
+			this->eps_area->PromptChar = ' ';
+			this->eps_area->Size = System::Drawing::Size(87, 26);
+			this->eps_area->TabIndex = 19;
+			this->eps_area->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
+			// 
+			// a_area
+			// 
+			this->a_area->Location = System::Drawing::Point(62, 161);
+			this->a_area->Mask = L"#000";
+			this->a_area->Name = L"a_area";
+			this->a_area->PromptChar = ' ';
+			this->a_area->Size = System::Drawing::Size(48, 26);
+			this->a_area->TabIndex = 20;
+			this->a_area->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
+			// 
+			// b_area
+			// 
+			this->b_area->Location = System::Drawing::Point(137, 161);
+			this->b_area->Mask = L"#000";
+			this->b_area->Name = L"b_area";
+			this->b_area->PromptChar = ' ';
+			this->b_area->Size = System::Drawing::Size(48, 26);
+			this->b_area->TabIndex = 21;
+			this->b_area->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
 			// MyForm
 			// 
